@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block title %}Log in{% endblock %}
+{% block content %}
+
+<!-- PAGE TITLE
+    ================================================== -->
+    <header class="py-8 py-md-11" style="background-image: none;">
+        <div class="container text-center py-xl-2">
+            <h1 class="display-4 fw-semi-bold mb-0">Login</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb breadcrumb-scroll justify-content-center">
+                    <li class="breadcrumb-item">
+                        <a class="text-gray-800" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item text-gray-800 active" aria-current="page">
+                        Login
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Img -->
+        <img class="d-none img-fluid" src="...html" alt="...">
+    </header>
+
+
+    <!-- LOGIN
+    ================================================== -->
+    <div class="container mb-11">
+        <div class="row gx-0">
+            <div class="col-md-7 col-xl-4 mx-auto">
+                <!-- Login -->
+                <h3 class="mb-6">Log In to Your Skola Account!</h3>
+                {% include 'components/msg.html' %}
+
+                <!-- Form Login -->
+                <form class="mb-5" method = 'POST' action = '{% url 'login_page' %}'>
+                    {% csrf_token %}
+                    <!-- Email -->
+                    <div class="form-group mb-5">
+                        <label for="modalSigninEmail1">
+                            Email
+                        </label>
+                        <input type="email" class="form-control" id="modalSigninEmail1" placeholder="creativelayers" name='email'>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                        <label for="modalSigninPassword1">
+                            Password
+                        </label>
+                        <input type="password" class="form-control" id="modalSigninPassword1" placeholder="**********" name='password'>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-5 font-size-sm">
+                        <div class="form-check">
+                            <input class="form-check-input text-gray-800" type="checkbox" id="autoSizingCheck1">
+                            <label class="form-check-label text-gray-800" for="autoSizingCheck1">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <div class="ms-auto">
+                            <a class="text-gray-800" href="{% url 'password_reset' %}">Forgot Password</a>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                        LOGIN
+                    </button>
+                </form>
+
+                <!-- Text -->
+                <p class="mb-0 font-size-sm text-center">
+                    Don't have an account? <a class="text-underline" href="register.html">Sign up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

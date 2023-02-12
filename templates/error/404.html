@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}404{% endblock  %}
+{% block content %}
+
+
+    <!-- 404
+    ================================================== -->
+    <div class="container my-10">
+        <!-- Illustrator -->
+        <img src="{% static 'assets/img/illustrations/illustration-12.svg' %}" alt="..." class="img-fluid mb-5 mb-md-9">
+
+        <div class="row">
+            <div class="col-xl-6 mx-auto text-center">
+                <h1 class="display-6">Ohh! Page Not Found</h1>
+                <p class="mb-6">We can’t seem to find the page you’re looking for</p>
+
+                <form class="mb-5">
+                    <div class="input-group d-block d-md-flex bg-white p-1 rounded border">
+                        <input type="text" class="form-control w-100 w-md-auto form-control-sm rounded border-0 placeholder-1" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+                        <div class="input-group-append ms-0">
+                            <button class="btn btn-sm btn-primary w-100 w-md-auto btn-wide rounded border-0" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+
+                <a href="{% url 'home' %}" class="d-inline-block text-underline text-blue">Back to home</a>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock  %}
