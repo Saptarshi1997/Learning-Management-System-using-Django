@@ -14,7 +14,7 @@ and we have to give the acces to the mail.
 --> Here 'LMS' is the project folder & 'app' is the project app
 
 
-Tool Used: Python, Django, SQLITE3, HTML, CSS, Javascript etc.
+Tool Used: Python, Django, SQLITE3, RDBMS, Models, HTML, CSS, Javascript etc.
 
 
 # Step-1: Creating Virtual Environment
