@@ -41,7 +41,7 @@ Use this command: python manage.py createsuperuser
 
 # Step-6: Run the WSGI server
 Use the command: python manage.py runserver
---> Please check the server which is running in console is Development server or not
 
+--> Please check the server which is running in console is Development server or not
 
 --> Go to any browser and search for: http://localhost:8000
