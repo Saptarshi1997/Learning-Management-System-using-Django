@@ -3,7 +3,7 @@
 
 # Basic Principle/Architechture
 This project is basically based on a renowned E-learning website: UDEMY. In this project we can see different 
-web-pages with different functionality(Home, About us, Login, Signup etc.) and different couses which are 
+web-pages with different functionality(Home, About us, Login, Signup etc.) and different courses which are 
 listed in the 'All courses' page. The website has the functionality which shows enrolled courses in a 
 different page. In this project we have used the basic functions, class & models are used to make every 
 different functionality. In this project we have the 'update password' option which sends the confirmation 
